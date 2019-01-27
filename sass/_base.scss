@@ -13,6 +13,8 @@ $color-grey-dark-2: #6d5d4b;
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
+$font-size-large: 1.7rem;
+$font-size-larger: 1.9rem;
 
 // OTHER VARIABLES
 $grid-bleed: 6rem;
@@ -43,10 +45,4 @@ body {
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax($grid-bleed, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax($grid-bleed, 1fr) [full-end];
   // header/realtors - features - story - homes - gallery - footer.
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-
-  // TEMPORARY
-  & > * {
-    font-size: 3rem;
-    padding: 40px;
-  }
 }
