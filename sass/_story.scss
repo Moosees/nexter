@@ -5,7 +5,18 @@
   }
 
   &__content {
+    align-items: flex-start;
     background-color: $color-grey-light-1;
+    display: flex;
+    flex-direction: column;
     grid-column: col-start 5 / full-end;
+    justify-content: center;
+    padding: 6rem 8vw;
+  }
+
+  &__text {
+    font-size: $font-size-small;
+    font-style: italic;
+    margin-bottom: 4rem;
   }
 }
