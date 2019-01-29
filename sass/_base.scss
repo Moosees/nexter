@@ -5,6 +5,7 @@ $color-primary-dark: #b28451;
 $color-secondary: #101d2c;
 
 $color-white: #fff;
+$color-black: #000;
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
@@ -23,6 +24,8 @@ $font-size-huge: 4rem;
 
 // OTHER VARIABLES
 $grid-bleed: 6rem;
+$box-shadow-weak: 0 2rem 5rem rgba($color-black, .1);
+$box-shadow-medium: 0 2rem 5rem rgba($color-black, .25);
 
 *,
 *::before,
