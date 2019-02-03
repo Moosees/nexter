@@ -1,9 +1,6 @@
 %heading {
   font-family: $font-display;
   font-weight: 400;
-
-  &--light {color: $color-grey-light-1;}
-  &--dark {color: $color-grey-dark-1;}
 }
 
 .heading-1 {
@@ -18,6 +15,9 @@
   font-size: $font-size-huge;
   font-style: italic;
   line-height: 1;
+
+  &--light {color: $color-grey-light-1;}
+  &--dark {color: $color-grey-dark-1;}
 }
 
 .heading-3 {
@@ -30,4 +30,7 @@
 .heading-4 {
   @extend %heading;
   font-size: $font-size-larger;
+
+  &--light {color: $color-grey-light-1;}
+  &--dark {color: $color-grey-dark-1;}
 }
