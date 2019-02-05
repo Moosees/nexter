@@ -2,16 +2,36 @@
   background-color: $color-secondary;
   grid-column: full-start / full-end;
   padding: 8rem;
+
+  @media screen and (max-width: $bp-large) {
+    padding: 4rem;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    padding: 2rem;
+  }
 }
 
 .nav {
   align-items: center;
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   list-style: none;
 
-  &__item {}
+  @media screen and (max-width: $bp-large) {
+    grid-gap: 1rem;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: $bp-smallest) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  //&__item {}
 
   &__link {
 
@@ -41,4 +61,8 @@
   font-size: $font-size-smaller;
   margin-top: 6rem;
   text-align: center;
+
+  @media screen and (max-width: $bp-medium) {
+    margin-top: 3rem;
+  }
 }
