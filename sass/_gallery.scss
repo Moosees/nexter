@@ -7,6 +7,10 @@
   grid-template-rows: repeat(7, 5vw); // 5% viewport WIDTH so they scale on smaller screens.
   padding: 1.5rem; // acts as a grid-gap around the whole grid.
 
+  @media screen and (max-width: $bp-small) {
+    display: none;
+  }
+
   // we use a container as grid item so we can use object-fit on the img.
   &__item {
     &--1 {
